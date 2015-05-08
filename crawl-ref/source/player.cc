@@ -2751,7 +2751,7 @@ bool will_gain_life(int lev)
     if (lev < you.attribute[ATTR_LIFE_GAINED] - 2)
         return false;
 
-    return you.lives + you.deaths < (lev - 1) / 3;
+    return you.lives + you.deaths < (lev +3) / 7;
 }
 
 static void _felid_extra_life()
